@@ -1,22 +1,40 @@
 import tkinter as tk
 from tkinter import ttk
 
+# Función para convertir un número de una base a otra
 def convertir_base(numero, base_origen, base_destino):
     try:
-        # Convertir el número a base 10
-        decimal_numero = int(numero, base_origen)
-        
-        # Convertir el número de base 10 a la base de destino
-        digitos = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"  # Dígitos permitidos en bases hasta la base 36
-        resultado = ""
-        while decimal_numero > 0:
-            residuo = decimal_numero % base_destino
-            resultado = digitos[residuo] + resultado
-            decimal_numero = decimal_numero // base_destino
+        partes = numero.split('.')  # Dividir el número en su parte entera y decimal
+        parte_entera = int(partes[0], base_origen)
+
+        # Convertir la parte entera a la base de destino
+        resultado_entero = ""
+        digitos = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        while parte_entera > 0:
+            residuo = parte_entera % base_destino
+            resultado_entero = digitos[residuo] + resultado_entero
+            parte_entera = parte_entera // base_destino
+
+        resultado_decimal = ""
+        if len(partes) == 2:
+            longitud_decimal = len(partes[1])
+            parte_decimal = sum(int(partes[1][i], base_origen) * (base_origen ** -(i + 1)) for i in range(longitud_decimal))
+
+            # Convertir la parte decimal a la base de destino
+            for _ in range(4):  # Aquí puedes ajustar la precisión de la parte decimal
+                parte_decimal *= base_destino
+                digito = int(parte_decimal)
+                resultado_decimal += digitos[digito]
+                parte_decimal -= digito
+
+        resultado = resultado_entero
+        if resultado_decimal:  # Agregar la parte decimal si existe
+            resultado += "." + resultado_decimal
 
         return resultado
-    except ValueError:
+    except (ValueError, IndexError):
         return "Error: Verifique que los números ingresados y la base sean correctos."
+
 
 
 def realizar_conversion():
