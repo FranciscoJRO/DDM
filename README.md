@@ -20,3 +20,8 @@ Aprender la implementación de los elementos principales para el diseño y const
 [![Ver Video 1](https://uelectronics.com/wp-content/uploads/2018/10/Led-10mm-Grande-V1.jpg)](https://youtu.be/KBUQLJQaJv8)
 
 Aprender la implementación de tablas de verdad y de compuertas logicas.
+
+### Video 3: Practica 3
+[![Ver Video 1](https://hetpro-store.com/TUTORIALES/wp-content/uploads/2018/01/Display-7-segmentos-catodo-comun-1024x688.jpg)](https://youtu.be/bde1e2_bqGc)
+
+Aprender la implementación de un display de 7 segmentos.
