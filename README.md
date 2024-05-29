@@ -28,6 +28,6 @@ Aprender la implementación de un display de 7 segmentos.
 
 
 ### Video final : Proyecto final de DDM Equipo 11
-[![Ver Video 1](https://www.shutterstock.com/image-vector/driver-exhales-into-breathalyzer-testing-600nw-1927646714.jpg)]([https://youtu.be/bde1e2_bqGc](https://youtu.be/HLidSTpbbPk?si=xZmZmlLgsHpke8Y1))
+[![Ver Video 1](https://www.shutterstock.com/image-vector/driver-exhales-into-breathalyzer-testing-600nw-1927646714.jpg)](https://youtu.be/HLidSTpbbPk?si=xZmZmlLgsHpke8Y1)
 
 Creacion de un alcoholímetro​ con un arduino 
