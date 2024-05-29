@@ -32,4 +32,10 @@ Aprender la implementación de un display de 7 segmentos.
 
 Creacion de un alcoholímetro​ con un arduino 
 
-[![Ver PDF](https://img.shields.io/badge/Ver%20PDF-Informational?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=blue)](https://github.com/FranciscoJRO/DDM/blob/main/Proyecto%20Final%20DDM%20EQUIPO%2011.pdf)
+<div style="text-align: center;">
+  <p style="font-size: 24px; font-weight: bold;">Documentación</p>
+  <a href="https://github.com/FranciscoJRO/DDM/blob/main/Proyecto%20Final%20DDM%20EQUIPO%2011.pdf">
+    <img src="https://img.shields.io/badge/Ver%20PDF-Informational?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=blue" alt="Ver PDF" style="width: 300px; height: auto;">
+  </a>
+</div>
+
